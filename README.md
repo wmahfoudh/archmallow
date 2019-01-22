@@ -4,5 +4,5 @@ Please remember that Arch is a rolling release and so, the primary source for Ar
 # Installation
 1. [Arch Linux install](./docs/arch-install.md)
 
-# Useful stuff
+# Other resources
 1. [Useful pacman commands](./docs/useful-pacman-commands.md)
