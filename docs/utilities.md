@@ -2,10 +2,7 @@
 ## ZSH
 Check current shell with ``echo $SHELL``, then install ZSH and its useful plugins
 ````console
-sudo pacman -S zsh
-sudo pacman -S zsh-completions
-sudo pacman -S zsh-syntax-highlighting
-sudo pacman -S zsh-history-substring-search
+sudo pacman -S zsh zsh-completions zsh-syntax-highlighting zsh-history-substring-search
 ````
 Launch ZSH by typing ``zsh``. Here is how to launch the configuration script if you missed it
 ````console
