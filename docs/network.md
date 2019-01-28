@@ -17,19 +17,19 @@ nmcli con show
 nmcli dev status
 nmcli con add type ethernet con-name LAN ifname DEVICE
 ````
-## WIFI related commands
+## Wifi related commands
 ````console
 nmcli d wifi list
 nmcli d wifi connect WIFI password 'PASSWORD'
 ````
-## For Hidden networks
+## Hidden networks
 ````console
 nmcli con add con-name WIFI ifname wlan0 type wifi ssid WIFI
 nmcli con modify WIFI wifi-sec.key-mgmt wpa-psk
 nmcli con modify WIFI wifi-sec.psk PASSWORD
 nmcli con up WIFI
 ````
-## Misc commands
+## Other commands
 ````console
 nmcli radio wifi on
 nmcli radio wifi off
