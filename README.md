@@ -1,6 +1,5 @@
 # Archmallow
-This project is more about documenting the way I use Arch than any other consideration. A sort of n00bs guide. I use it to replicate the installation on other machines. The idea is to have the installation steps and personal customizations of i3 along with some troubleshooting I regularly face, all in one place.
-Please remember that Arch is a rolling release and so, the primary source for Arch related matters is the Arch wiki. Some customizations are hardware agnostic, others are matters of taste. Otherwise, if some information provided here could be of any help that would be great!
+This is a personal project aiming to document and record repetitive tasks I perform whenever installing Arch on a new machine including i3 custimizations. Some of these customizations are hardware agnostic, others are matters of taste. Otherwise, if any information provided here could be of any help that would be great!
 # Installation
 1. [Arch Linux install](./docs/arch-install.md)
 2. [Creating a new user](./docs/new-user.md)
