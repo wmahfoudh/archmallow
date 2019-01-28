@@ -3,6 +3,7 @@ This is a personal project aiming to document and record repetitive tasks I perf
 # Installation
 1. [Arch Linux install](./docs/arch-install.md)
 2. [Creating a new user](./docs/new-user.md)
+3. [Network](./docs/network.md)
 
 # Other resources
 1. [Useful pacman commands](./docs/useful-pacman-commands.md)
