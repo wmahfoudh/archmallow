@@ -33,5 +33,5 @@ nmcli con up WIFI
 ````console
 nmcli radio wifi on
 nmcli radio wifi off
-nmcli con mod Nalid ipv4.dns "8.8.8.8 8.8.4.4"
+nmcli con mod CONNECTION_NAME ipv4.dns "8.8.8.8 8.8.4.4"
 ````
