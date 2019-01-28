@@ -1,6 +1,6 @@
 [Appearance]
 BoldIntense=true
-ColorScheme=Tango
+ColorScheme=tango
 Font=Droid Sans Mono,10,-1,5,50,0,0,0,0,0
 UseFontLineChararacters=true
 
