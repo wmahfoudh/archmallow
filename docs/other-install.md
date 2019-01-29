@@ -1,1 +1,0 @@
-# Completing Arch installation

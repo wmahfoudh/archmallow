@@ -35,3 +35,17 @@ nmcli radio wifi on
 nmcli radio wifi off
 nmcli con mod CONNECTION_NAME ipv4.dns "8.8.8.8 8.8.4.4"
 ````
+## Creating a hotspot
+### Arch
+````console
+pacman -S create_ap
+create_ap wlan0 wlan0 ACCESSPOINT PASSPHRASE
+systemctl start create_ap
+systemctl enable create_ap
+````
+### M$
+````console
+netsh wlan set hostednetwork mode=allow ssid=Bagala key=password
+netsh wlan start hostednetwork
+netsh wlan stop hostednetwork
+````

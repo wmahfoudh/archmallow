@@ -70,7 +70,7 @@ passwd
 ```
 Install and configure grub
 ```bash
-pacman -S grub os-prober ntfs-3g
+pacman -S grub os-prober ntfs-3g exfat-utils
 os-prober
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
