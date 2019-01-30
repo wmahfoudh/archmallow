@@ -7,6 +7,7 @@ This is a personal project aiming to document and record repetitive tasks I perf
 4. [Utilities](./docs/utilities.md)
 4. [Locale](./docs/locale.md)
 5. [Sound](./docs/sound.md)
+6. [Firefox](./docs/firefox.md)
 
 # Other resources
 1. [Useful pacman commands](./docs/useful-pacman-commands.md)

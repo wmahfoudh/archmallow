@@ -70,11 +70,7 @@ sudo pacman -S adwaita-icon-theme arc-icon-theme mate-icon-theme sugar-artwork t
 ````console
 sudo pacman -S xcursor-bluecurve xcursor-flatbed xcursor-neutral xcursor-simpleandsoft xcursor-pinux xcursor-vanilla-dmz xcursor-vanilla-dmz-aa
 ````
-## Firefox
-````console
-pacman -S firefox flashplugin
-````
-## Screen shot & wallpaper
+## Screen shot & image utilities
 ````console
 sudo pacman -S scrot feh
 ````
