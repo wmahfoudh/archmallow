@@ -5,7 +5,7 @@ This is a personal project aiming to document and record in one place various ta
 2. [Creating a new user](./docs/new-user.md)
 3. [Network installation](./docs/network.md)
 4. [Some utilities](./docs/utilities.md)
-4. [Notes on locale setup](./docs/locale.md)
+4. [Setting locale](./docs/locale.md)
 5. [Notes on sound setup](./docs/sound.md)
 6. [Firefox tweaking](./docs/firefox.md)
 
