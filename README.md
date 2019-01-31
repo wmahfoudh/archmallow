@@ -8,6 +8,7 @@ This is an n00bs collection of info related to installing Arch and customizing i
 - [Enabling Num Lock on startup](./docs/numlock.md)
 - [Some utilities](./docs/utilities.md)
 - [Notes on sound setup](./docs/sound.md)
+- [Backlight adjustment](./docs/backlight.md)
 - [Firefox tweaking](./docs/firefox.md)
 - [Enabling touchpad tapping](./docs/touchpad-tap.md)
 
