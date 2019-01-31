@@ -1,4 +1,4 @@
-# Sound related questions
+# Notes on sound setup
 ## Installation
 Install ``alsa-utils`` and ``alsa-plugins`` to have the needed configuration utilities and high quality sampling capability
 ````console
