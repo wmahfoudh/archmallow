@@ -5,7 +5,7 @@
 set $mod Mod4
 
 # set wallpaper
-exec --no-startup-id feh --bg-scale ~/Images/03.jpg
+exec --no-startup-id feh --bg-scale ~/images/05.jpg
 # launch compton
 exec --no-startup-id compton -f
 
