@@ -18,6 +18,8 @@ chsh -s /usr/bin/zsh root
 sudo pacman -S git
 git config --global color.diff auto
 git config --global color.status auto
+git config --global user.name "name"
+git config --global user.email "email"
 ````
 ## Yay
 ````console
