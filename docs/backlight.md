@@ -41,4 +41,10 @@ brillo -A 5
 brillo -U 10
 ````
 
-For more details on how to use ``brillo``, check its [man page](https://gitlab.com/cameronnemo/brillo/blob/master/doc/man/brillo.1.md). The above commands can be bound to keyboard shortcuts within the window manager later on.
+For more details on how to use ``brillo``, check its [man page](https://gitlab.com/cameronnemo/brillo/blob/master/doc/man/brillo.1.md).
+
+The above commands can be bound to keyboard shortcuts within the window manager. Here is an example of i3 config file binding
+````console
+bindcode $mod+20 exec --no-startup-id brillo -U 5
+bindcode $mod+21 exec --no-startup-id brillo -A 5
+````
