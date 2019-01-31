@@ -31,7 +31,7 @@ Now, add your user to the group ``video``
 usermod -a -G video user_name
 ````
 ## Part 3
-So far, we solved the privileges problem. But rather than directly editing each time the configuration files we will install a simple program called [brillo](https://gitlab.com/cameronnemo/brillo) to do it more simply, install it from the AUR by ``yay -S brillo``
+So far, we solved the privileges problem. But rather than directly editing each time the configuration files we will install a small utility called [brillo](https://gitlab.com/cameronnemo/brillo) to do it more simply. Get it from the AUR by ``yay -S brillo``
 
 ``brillo`` can be used this way
 ````console
