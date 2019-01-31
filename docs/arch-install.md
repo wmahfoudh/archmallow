@@ -1,5 +1,8 @@
 # Installing Arch Linux
-Create a USB boot key
+
+The rest of this document supposes a wired connection to the internet which I found at this stage, more reliable than a wireless link 
+
+After downloading the Arch Linux ISO file, create a USB boot key. I recommend running ``lsblk`` before and after inserting the USB key and note the new entry which should correspond to that key. A mistake in the drive letter here can cost a disk!
 ```bash
 dd bs=4M if=/path/to/archlinux.iso of=/dev/sdx status=progress && sync
 # x being the letter corresponsing to the inserted key
