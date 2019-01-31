@@ -11,3 +11,4 @@ This is a personal project aiming to document and record in one place various ta
 
 # Other resources
 1. [Pacman commands summary](./docs/useful-pacman-commands.md)
+2. [Enabling Num Lock on startup](./docs/numlock.md)
