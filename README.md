@@ -11,5 +11,5 @@ This is an n00bs collection of info related to installing Arch and customizing i
 - [Firefox tweaking](./docs/firefox.md)
 - [Enabling touchpad tapping](./docs/touchpad-tap.md)
 
-# Other resources
+# Resources
 - [Pacman commands summary](./docs/useful-pacman-commands.md)
