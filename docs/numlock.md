@@ -1,7 +1,7 @@
 # Enabling Num Lock on startup
-Numlock is not set by default. Here is how to do it
+Numlock is not set by default. Here is how to do it for tty and X11 (both needed)
 
-## for tty
+## For tty
 Create a this file ``/usr/local/bin/numlock`` and edit it to include
 ````console
 #!/bin/bash
