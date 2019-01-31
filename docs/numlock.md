@@ -29,7 +29,8 @@ Enable the service by ``systemctl enable numlock.service``
 
 ## For X11
 Install ``numlockx`` by running ``pacman -S numlockx``
-Invoke ``numlockx`` in the background (in ``.xinitrc``) just before invoking the window manager
+
+Edit ``.xinitrc`` and add an entry to invoke numlockx in the background just before invoking the window manager (i3 here)
 ````console
 numlockx &
 exec i3
