@@ -6,7 +6,7 @@ sudo pacman -S alsa-utils alsa-plugins
 ````
 To control the volume run ``alsamixer``. 'MM' means that the channel is muted, '00' means open, press 'm' to unmut it
 
-For storing the current volume run ``sudo alsactl store`` and to test the speakers you can run ``speaker-test -c 2``
+For testing the speakers you can run ``speaker-test -c 2`` and for saving the current ``alsamixer`` settings run ``sudo alsactl store``
 
 Below are various examples to play with
 ````console
