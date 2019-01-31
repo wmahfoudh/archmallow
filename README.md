@@ -1,5 +1,5 @@
 # Archmallow
-This is a n00bs collection of notes and templates related to installing Arch and customizing i3-gaps. It's not a *"yet another Arch installation tutorial"*, but rather to address a set of practical problems a beginner faces when installing Arch. This repo is mainly for personal use, however, that would be great if others can get something out of it.
+This is a n00bs collection of notes and templates related to installing Arch and customizing i3-gaps. It's not meant to be a *"yet another Arch installation tutorial"*, but rather to address a set of practical problems a beginner faces when installing Arch. This repo is mainly for personal use, however, that would be great if others can get something out of it.
 
 # Installation
 - [Arch Linux install](./docs/arch-install.md)
