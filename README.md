@@ -16,4 +16,4 @@ This is a n00bs collection of notes and templates related to installing Arch and
 
 # Resources
 - [Pacman commands summary](./docs/useful-pacman-commands.md)
-![Putting it all together](./screenshots/archmallow.png)
+![Putting it all together](./home/screenshots/archmallow.png)
