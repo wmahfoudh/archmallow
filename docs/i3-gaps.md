@@ -28,7 +28,7 @@ Now inside i3 .config file, you can bind the screen lock with (mod+o for example
 ````console
 bindcode $mod+32 exec ~/.i3lock-wrapper
 ````
-## Locking inactive screen
+## Locking the computer for inactivity
 To do so, ``xautolock`` must be called to run in the background before calling the i3 window manager. This is done in the ``.xinitrc`` file
 ````bash
 xautolock -time 1 -corners ---- -locker '~/.i3lock-wrapper' &
@@ -46,4 +46,18 @@ bindcode 107 exec --no-startup-id scrot ~/screenshots/`date +%Y-%m-%d-%H-%M-%S`.
 bindcode $mod+107 exec --no-startup-id scrot -u ~/screenshots/`date +%Y-%m-%d-%H-%M-%S`.png
 # Region screenshoot (mod+Shift+PAUSE) (will show selector arrows to draw a rectangle area)
 bindcode $mod+127 exec --no-startup-id scrot -s ~/screenshots/`date +%Y-%m-%d-%H-%M-%S`.png
+````
+## Change the keyboard layout
+and display it in the status bar: it's all explained [here](https://github.com/porras/i3-keyboard-layout). Create ``~/.i3-keyboard-layout`` with [this](https://github.com/porras/i3-keyboard-layout/blob/master/i3-keyboard-layout) contents. In the ``bar`` section of i3 config file replace this
+````console
+status_command i3status
+````
+by this
+````console
+status_command i3status | ~/.i3-keyboard-layout i3status
+````
+The only thing remainingis to bind keyboards to some keys. Personally, I prefer on key to cycle the 3 languages I use. I have these lines in my i3 config file
+````console
+# cycle keyboards (c)
+bindcode $mod+54 exec --no-startup-id ~/.i3-keyboard-layout cycle us fr ar
 ````
