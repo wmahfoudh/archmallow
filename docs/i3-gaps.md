@@ -38,7 +38,6 @@ exec i3
 - ``-corners ----`` mean that the screen won't lock if the mouse pointer is located at any corner. This is particularly useful if you're watching a movie or anything similar and don't want the screen to lock
 - ``-locker '~/.i3lock-wrapper'`` means the the locker to be used is our wrapper defined previously
 ## Screen capture
-# Full screen capture (PrintScreen)
 This can be achieved using ``scrot`` with the following bindings (captured images are saved in ``~/screenshot``)
 ````console
 # Full screen capture (PrintScreen)
