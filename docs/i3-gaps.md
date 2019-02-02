@@ -37,3 +37,14 @@ exec i3
 - ``-time 1`` means that the screen will be locked after 1 minte of inactivity
 - ``-corners ----`` mean that the screen won't lock if the mouse pointer is located at any corner. This is particularly useful if you're watching a movie or anything similar and don't want the screen to lock
 - ``-locker '~/.i3lock-wrapper'`` means the the locker to be used is our wrapper defined previously
+## Screen capture
+# Full screen capture (PrintScreen)
+``Scrot`` is a lightweight utility for various types of screen shots. Its usage is sraight forward. Here is how it is bound (this supposes a folder ``~/screenshot`` exists)
+````console
+# Full screen capture (PrintScreen)
+bindcode 107 exec --no-startup-id scrot ~/screenshots/`date +%Y-%m-%d-%H-%M-%S`.png
+# Window capture (mod+PrintScreen)
+bindcode $mod+107 exec --no-startup-id scrot -u ~/screenshots/`date +%Y-%m-%d-%H-%M-%S`.png
+# Region screenshoot (mod+Shift+PAUSE) (will show selector arrows to draw a rectangle area)
+bindcode $mod+127 exec --no-startup-id scrot -s ~/screenshots/`date +%Y-%m-%d-%H-%M-%S`.png
+````
