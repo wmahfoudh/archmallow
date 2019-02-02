@@ -39,7 +39,7 @@ exec i3
 - ``-locker '~/.i3lock-wrapper'`` means the the locker to be used is our wrapper defined previously
 ## Screen capture
 # Full screen capture (PrintScreen)
-``Scrot`` is a lightweight utility for various types of screen shots. Its usage is sraight forward. Here is how it is bound (this supposes a folder ``~/screenshot`` exists)
+This can be achieved using ``scrot`` with the following bindings (captured images are saved in ``~/screenshot``)
 ````console
 # Full screen capture (PrintScreen)
 bindcode 107 exec --no-startup-id scrot ~/screenshots/`date +%Y-%m-%d-%H-%M-%S`.png
