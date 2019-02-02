@@ -68,3 +68,19 @@ assign [class="(?i)gimp*"] Gimp
 assign [class="(?i)rawtherapee*"] Rawtherapee
 assign [class="(?i)inkscape*"] Inkscape
 ````
+# Specific windows
+The i3 default tiling principle can be changed for some windows like in the below examples. Those windows can be designated by class, role title or type.
+````console
+#specific windows behaviour 
+for_window [class="(?i)pavucontrol"] floating enable
+for_window [class="(?i)qemu-system-x86_64"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [title="About Mozilla Firefox"] floating enable
+for_window [title="About Nightly"] floating enable
+for_window [title="Library"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+for_window [class="Gcolor3"] floating enable
+````
