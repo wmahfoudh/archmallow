@@ -22,7 +22,7 @@ nmcli con add type ethernet con-name LAN_CONNECTION_NAME ifname DEVICE
 nmcli d wifi list
 nmcli d wifi connect WIFI_SSID password PASSWORD
 ````
-## Hidden networks
+## In case of hidden networks
 ````console
 nmcli con add con-name CONNECTION_NAME ifname wlan0 type wifi ssid WIFI
 nmcli con modify CONNECTION_NAME wifi-sec.key-mgmt wpa-psk
@@ -45,7 +45,7 @@ systemctl enable create_ap
 ````
 ### M$
 ````console
-netsh wlan set hostednetwork mode=allow ssid=Bagala key=password
+netsh wlan set hostednetwork mode=allow ssid=ACCESSPOINT key=PASSPHRASE
 netsh wlan start hostednetwork
 netsh wlan stop hostednetwork
 ````
