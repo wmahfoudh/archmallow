@@ -48,16 +48,23 @@ bindcode $mod+107 exec --no-startup-id scrot -u ~/screenshots/`date +%Y-%m-%d-%H
 bindcode $mod+127 exec --no-startup-id scrot -s ~/screenshots/`date +%Y-%m-%d-%H-%M-%S`.png
 ````
 ## Change the keyboard layout
-and display it in the status bar: it's all explained [here](https://github.com/porras/i3-keyboard-layout). Create ``~/.i3-keyboard-layout`` with [this](https://github.com/porras/i3-keyboard-layout/blob/master/i3-keyboard-layout) contents. In the ``bar`` section of i3 config file replace this
+and display it in the status bar: it's all explained [here](https://github.com/porras/i3-keyboard-layout). Create ``~/.i3-keyboard-layout`` with [this](https://github.com/porras/i3-keyboard-layout/blob/master/i3-keyboard-layout) contents. In the ``bar`` section of i3 config file replace this:
 ````console
 status_command i3status
 ````
-by this
+by this:
 ````console
 status_command i3status | ~/.i3-keyboard-layout i3status
 ````
-The only thing remainingis to bind keyboards to some keys. Personally, I prefer on key to cycle the 3 languages I use. I have these lines in my i3 config file
+The only thing remaining is to bind keyboards to some keys of your choice. Personally, I prefer on key to cycle the 3 languages I use. I have these lines in my i3 config file
 ````console
-# cycle keyboards (c)
+# cycle keyboards (mod+c)
 bindcode $mod+54 exec --no-startup-id ~/.i3-keyboard-layout cycle us fr ar
+````
+## Opening some programs in dedicated workspaces
+If you want to have certain programs to open in dedicated workspaces, you need to create entries where you assign the class of the program window to the wanted workspace. To get the window class of a program, just run ``xprop WM_CLASS`` and then click on the window in question. Use (?i) to tell the assign instruction to be case insenitive.
+````console
+assign [class="(?i)gimp*"] Gimp
+assign [class="(?i)rawtherapee*"] Rawtherapee
+assign [class="(?i)inkscape*"] Inkscape
 ````
