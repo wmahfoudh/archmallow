@@ -68,7 +68,7 @@ assign [class="(?i)gimp*"] Gimp
 assign [class="(?i)rawtherapee*"] Rawtherapee
 assign [class="(?i)inkscape*"] Inkscape
 ````
-# Specific windows
+## Specific windows
 The i3 default tiling principle can be changed for some windows like in the below examples. Those windows can be designated by class, role title or type.
 ````console
 #specific windows behaviour 
