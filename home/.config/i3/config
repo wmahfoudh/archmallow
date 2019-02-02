@@ -23,12 +23,12 @@ bindcode $mod+54 exec --no-startup-id ~/.i3-keyboard-layout cycle us fr ar
 bindcode $mod+40 exec --no-startup-id rofi -modi drun -show drun -show-icons -opacity "85"
 # window switcher (tab)
 bindcode $mod+23 exec --no-startup-id rofi -show window -no-fixed-line-nums
-# Window screenshoot (PrintScreen)
-bindcode 107 exec --no-startup-id scrot -u ~/Screenshots/`date +%Y-%m-%d-%H-%M-%S`.png
-# Fill screen screenshoot (Mod+PrintScreen)
-bindcode $mod+107 exec --no-startup-id scrot ~/Screenshots/`date +%Y-%m-%d-%H-%M-%S`.png
-# Region screenshoot (Mod+Shift+Printscreen)
-bindcode $mod+127 exec --no-startup-id scrot -s ~/Screenshots/`date +%Y-%m-%d-%H-%M-%S`.png
+# Full screen capture (PrintScreen)
+bindcode 107 exec --no-startup-id scrot ~/screenshots/`date +%Y-%m-%d-%H-%M-%S`.png
+# Window capture (mod+PrintScreen)
+bindcode $mod+107 exec --no-startup-id scrot -u ~/screenshots/`date +%Y-%m-%d-%H-%M-%S`.png
+# Region screenshoot (mod+Shift+PAUSE) (will show selector arrows to draw a rectangle area)
+bindcode $mod+127 exec --no-startup-id scrot -s ~/screenshots/`date +%Y-%m-%d-%H-%M-%S`.png
 
 # apps in specific workspaces (xprop WM_CLASS to get window class)
 # (?i) means case insenitive..
