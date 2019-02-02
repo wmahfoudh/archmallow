@@ -8,7 +8,7 @@ This is a n00bs collection of notes and templates related to installing Arch and
 - [Setting locale](./docs/locale.md)
 - [Enabling Num Lock on startup](./docs/numlock.md)
 - [Some utilities](./docs/utilities.md)
-- [Installing and ricing i3-gaps](./i3-gaps)
+- [Installing and ricing i3-gaps](./docs/i3-gaps)
 - [Notes on sound setup](./docs/sound.md)
 - [Backlight adjustment](./docs/backlight.md)
 - [Firefox tweaking](./docs/firefox.md)
