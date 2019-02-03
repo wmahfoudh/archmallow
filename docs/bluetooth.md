@@ -28,7 +28,7 @@ The device will be recognized, unblock it
 [Microsoft Sculpt Comfort Mouse]# unblock
 ````
 # Using the same device with more than a system (dual boot, etc.)
-Once paired, authentication keys are stored in the host computer as weel as in the device itself.
+Once paired, authentication keys are stored in the host computer and in the device itself.
 Most bluetooth devices can manage only one authentication key. So if you pair your device with a Linux computer, and want to use it in Windows, you need to pair it again.
 
 A workaround is to pair the device on Linux, switch to windows, pair the device again and then copy the Windows authentication key to Linux. The opposite is also possible.
