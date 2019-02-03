@@ -8,7 +8,10 @@ Computers have a hardware clock where the time is saved regularly so time can be
 Yes, but which time is *stored regularly* in the hardware clock? It depends on the OS
 - Linux systems store the UTC in the hardware clock and know the location so they calculate the local time
 - Windows stores the local time
-Chances are you don't live in a UTC zone, this causes a problem with dual boot computers as each OS when booted will write *its version* of the time. Hopefully, it is possible to fix the problem either by configuring Windows to use UTC or by configuring Linux to use local time. Here is the way to do it, but please note that in both cases, this requires elevated permissions
+
+Chances are you don't live in a UTC zone, this causes a problem with dual boot computers as each OS when booted will write *its version* of the time. Hopefully, it is possible to fix the problem either by configuring Windows to use UTC or by configuring Linux to use local time.
+
+Here is the way to do it, but please note that in both cases, this requires elevated permissions
 ## Configuring Windows to use UTC
 Create a text file with a ``.reg`` extension with the following contents and then double click on it to merge the contents with the registry
 ````console
