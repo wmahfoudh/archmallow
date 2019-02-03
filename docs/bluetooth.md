@@ -27,6 +27,10 @@ The device will be recognized, unblock it
 ````console
 [Microsoft Sculpt Comfort Mouse]# unblock
 ````
+**Tip:** You can pipe commands to ``bluetoothctl`` in order for example to automate them
+````console
+<command1>\n<command2>\n | bluetoothctl
+````
 # Using the same device with more than a system (dual boot for example)
 Once paired, authentication keys are stored in the host computer and in the device itself.
 Most bluetooth devices can manage only one authentication key. So if you pair your device with a Linux computer, and want to use it in Windows, you need to pair it again
