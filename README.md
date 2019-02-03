@@ -14,8 +14,9 @@ This is a n00bs collection of notes and templates related to installing Arch and
 - [Firefox tweaking](./docs/firefox.md)
 - [Enabling touchpad tapping](./docs/touchpad-tap.md)
 - [Bluetooth](./docs/bluetooth.md)
+- [Fixing dual-boot time problem](./docs/time-problem.md)
 
-# Resources
-- [Pacman commands summary](./docs/useful-pacman-commands.md)
+# Other
+- [Some Pacman useful commands](./docs/useful-pacman-commands.md)
 # Putting it all together
 ![Putting it all together](./home/screenshots/archmallow.png)
