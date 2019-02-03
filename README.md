@@ -13,6 +13,7 @@ This is a n00bs collection of notes and templates related to installing Arch and
 - [Backlight adjustment](./docs/backlight.md)
 - [Firefox tweaking](./docs/firefox.md)
 - [Enabling touchpad tapping](./docs/touchpad-tap.md)
+- [Bluetooth](./docs/bluetooth.md)
 
 # Resources
 - [Pacman commands summary](./docs/useful-pacman-commands.md)
