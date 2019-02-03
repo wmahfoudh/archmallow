@@ -27,7 +27,7 @@ The device will be recognized, unblock it
 ````console
 [Microsoft Sculpt Comfort Mouse]# unblock
 ````
-# Solving the dual boot problem
+# Using the same device with more than a system (dual boot, etc.)
 Once paired, authentication keys are stored in the host computer as weel as in the device itself.
 Most bluetooth devices can manage only one authentication key. So if you pair your device with a Linux computer, and want to use it in Windows, you need to pair it again.
 
