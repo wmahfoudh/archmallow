@@ -9,7 +9,8 @@ Yes, but which time is *stored regularly* in the hardware clock? It depends on t
 - Linux systems store the UTC in the hardware clock and know the location so they calculate the local time
 - Windows stores the local time
 
-Chances are you don't live in the UTC time zone, this causes a problem with dual boot as each OS will write *its version* of the time.
+Chances are you don't live in the UTC time zone, and if you have more than an OS (dual or multiple boot), each time you switch OS you would have to correct the time because the previous OS when booted, messed with it
+
 # The fix
 Hopefully, it is possible to fix the above problem either by configuring Windows to use UTC or by configuring Linux to use local time.
 
