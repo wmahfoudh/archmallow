@@ -14,7 +14,7 @@ If you're a Python programmer you would need PyPA recommended tool for installin
 sudo pacman -S python-pip
 ````
 ## Thunar
-[Thunar](https://wiki.archlinux.org/index.php/Thunar) is a lightweight files manager, it can automount removable drives if started as a deamon at login ``thunar --daemon``
+[Thunar](https://wiki.archlinux.org/index.php/Thunar) is a lightweight files manager, it can automount removable drives if started as a deamon at login ``thunar --daemon``, provide a trash can, etc.
 ````bash
-sudo pacman -S thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman
+sudo pacman -S thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman gvfs
 ````
