@@ -1,5 +1,5 @@
 # More useful stuff
-The installation discribed in previous steps provides a "minimal and working system", here are few other tools, for more specific use
+The installation discribed in previous steps provides a "minimal and working system", for more specific use, here are few other tools (sorted in alphabetic order)
 ## dvgrab
 For capturing viseo and audio from FireWire cameras (IEEE 1394), you need ``dvgrab``
 
@@ -13,8 +13,8 @@ If you're a Python programmer you would need PyPA recommended tool for installin
 ````bash
 sudo pacman -S python-pip
 ````
-## Thunar
-[Thunar](https://wiki.archlinux.org/index.php/Thunar) is a lightweight files manager, it can automount removable drives if started as a deamon at login ``thunar --daemon``, provide a trash can, etc.
+## thunar
+[thunar](https://wiki.archlinux.org/index.php/Thunar) is a lightweight files manager, it can automount removable drives if started as a deamon at login ``thunar --daemon``, provide a trash can, etc.
 ````bash
 sudo pacman -S thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman gvfs
 ````
