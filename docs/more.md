@@ -16,5 +16,5 @@ sudo pacman -S python-pip
 ## thunar
 [thunar](https://wiki.archlinux.org/index.php/Thunar) is a lightweight files manager, it can automount removable drives if started as a deamon at login ``thunar --daemon``, provide a trash can, etc.
 ````bash
-sudo pacman -S thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman gvfs
+sudo pacman -S thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman gvfs tumbler
 ````
