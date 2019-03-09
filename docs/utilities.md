@@ -78,5 +78,5 @@ sudo pacman -S scrot feh
 ````
 ## and of course...
 ````console
-sudo pacman -S cmatrix neofetch weechat
+sudo pacman -S openssh cmatrix neofetch
 ````
