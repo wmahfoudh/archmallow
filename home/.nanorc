@@ -1,2 +1,2 @@
 set linenumbers
-include /usr/share/nano-syntax-highlighting/*.nanorc
+include /usr/share/nano/*.nanorc
