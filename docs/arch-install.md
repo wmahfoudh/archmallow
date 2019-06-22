@@ -1,6 +1,6 @@
 # Installing Arch Linux
 
-Please refer to the official Arch installation guide [here](https://wiki.archlinux.org/index.php/Installation_guide). The restis by no means a replacement, it's just personal notes 
+Please refer to the official Arch installation guide [here](https://wiki.archlinux.org/index.php/Installation_guide). The rest is by no means a replacement of the wiki, just personal notes 
 
 Flashing the ISO to a USB key
 ```bash
