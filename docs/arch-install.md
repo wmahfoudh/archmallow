@@ -1,39 +1,39 @@
 # Installing Arch Linux
 
-The rest of this document supposes a wired connection to the internet which I found at this stage, more reliable than a wireless link 
+Please refer to the official Arch installation guide [here](https://wiki.archlinux.org/index.php/Installation_guide). The restis by no means a replacement, it's just personal notes 
 
-After downloading the Arch Linux ISO file, create a USB boot key. I recommend running ``lsblk`` before and after inserting the USB key and note the new entry which should correspond to that key. A mistake in the drive letter here can cost a disk!
+Flashing the ISO to a USB key
 ```bash
 dd bs=4M if=/path/to/archlinux.iso of=/dev/sdx status=progress && sync
 # x being the letter corresponsing to the inserted key
 ```
-Partition disk
+Partitioning the disk (GPT)
 ```bash
 fdisk /dev/sda
-# we will create a root, home and swap partitions
+# sda1 EFI 512M
+# sda3 Linux swap (size 2xRAM)
+# sda2 Linux FS to mount root (size = remaining space)
 ```
-Create file systems
+Creating file systems
 ```bash
+# EFI partition
+mkfs.fat -F32 /dev/sda1
 # root partition
-mkfs.ext4 /dev/sda1
-# home partition
-mkfs.ext4 /dev/sda3
+mkfs.ext4 /dev/sda2
 # swap partition
-mkswap /dev/sda2
-swapon /dev/sda2
+mkswap /dev/sda3
+swapon /dev/sda3
 ```
 Mount the file systems
 ```bash
-mount /dev/sda1 /mnt
-mkdir /mnt/home
-mount /dev/sda3 /mnt/home
+mount /dev/sda2 /mnt
+mkdir /mnt/efi
+mount /dev/sda1 /mnt/efi
 ```
 Install Arch
 ```bash
 timedatectl set-ntp true
 pacstrap /mnt base base-devel
-pacman -S intel-ucode
-# for Intel processors
 ```
 Generate file system table
 ```bash
@@ -42,30 +42,16 @@ genfstab -U /mnt >> /mnt/etc/fstab
 Chroot to the new install
 ```bash
 arch-chroot /mnt
-```
-Create time zone symbolic link
-```bash
-ln -sf /usr/share/zoneinfo/<Region>/<City> /etc/localtime
-```
-Generate /etc/adjtime
-```bash
-hwclock --systohc
-```
-Localization
-```bash
-nano /etc/locale.gen
-# and uncomment en_US.UTF-8 UTF-8
-locale-gen
-echo LANG=en_US.UTF-8 > /etc/locale.conf
-export LANG=en_US.UTF-8
-nano vconsole.conf
-# to check keyboard
+pacman -S intel-ucode
+# for Intel processors
 ```
 Network
 ```bash
 echo konoha > /etc/hostname
 nano /etc/hosts
-# fix the hostname previously set
+127.0.0.1	localhost
+::1		localhost
+127.0.1.1	konoha.workgroup	konoha
 ```
 Change root password
 ```bash
@@ -75,14 +61,14 @@ Install and configure grub
 ```bash
 pacman -S grub os-prober ntfs-3g exfat-utils
 os-prober
-grub-install /dev/sda
+grub-install --target=x86_64-efi --efi-directory=/efi
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 Restart
 ```bash
 exit
 # exit chroot
+umount -R /mnt/efi
 umount -R /mnt
-umount -R /mnt/home
 reboot
 ```
