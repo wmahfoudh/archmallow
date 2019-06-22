@@ -31,7 +31,7 @@ makepkg -si
 ````
 ## Compression and sync utilities
 ````console
-pacman -S p7zip p7zip-plugins unrar tar rsync
+sudo pacman -S p7zip p7zip-plugins unrar tar rsync
 ````
 ## Codecs
 ````console
