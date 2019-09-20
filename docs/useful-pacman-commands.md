@@ -46,6 +46,10 @@ Remove a package with its config files
 ````bash
 pacman -Rn package_name
 ````
+Remove a package with all deps (even used ones) and config files
+````bash
+pacman -Rscn package_name
+````
 Remove dependencies leaving package
 ````bash
 pacman -Rdd package_name
@@ -53,8 +57,9 @@ pacman -Rdd package_name
 Cache clean
 ````bash
 pacman -Sc
-
+````
 Cache clean, remove all packages (no downgrade)
+````bash
 pacman -Scc
 ````
 Cleaning orphan packages
