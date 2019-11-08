@@ -39,7 +39,7 @@ makepkg -si
 ````
 ## Compression and sync utilities
 ````console
-sudo pacman -S p7zip p7zip-plugins unrar tar rsync
+sudo pacman -S p7zip unrar tar rsync
 ````
 ## Codecs
 ````console
@@ -49,9 +49,9 @@ sudo pacman -S a52dec faac faad2 flac jasper lame libdca libdv gst-libav libmad 
 ````console
 sudo pacman -S acpi
 ````
-## Fonts
+## Some fonts
 ````console
-sudo pacman -S adobe-source-sans-pro-fonts aspell-en enchant gst-libav gst-plugins-good icedtea-web jre8-openjdk languagetool libmythes mythes-en pkgstats ttf-anonymous-pro ttf-bitstream-vera ttf-dejavu ttf-droid ttf-gentium ttf-liberation ttf-ubuntu-font-family awesome-terminal-fonts ttf-font-awesome otf-font-awesome
+sudo pacman -S adobe-source-sans-pro-fonts aspell-en enchant gst-libav gst-plugins-good icedtea-web jre8-openjdk languagetool libmythes mythes-en pkgstats ttf-anonymous-pro ttf-bitstream-vera ttf-dejavu ttf-droid ttf-liberation ttf-ubuntu-font-family awesome-terminal-fonts ttf-font-awesome otf-font-awesome
 ````
 List available fonts with
 ````console
