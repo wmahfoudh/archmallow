@@ -3,7 +3,7 @@ We need to install the needed packages and setup the service
 ````console
 sudo pacman -S bluez bluez-utils pulseaudio-bluetooth
 systemctl enable bluetooth.service
-systemctl staraliast bluetooth.service
+systemctl start bluetooth.service
 ````
 Then edit the configuration file ``/etc/bluetooth/main.conf`` to play with some options. You can for instance set the various timeouts.
 I recommen though to set ``AutoEnable=true``, this will ensure all controllers are enabled once discovered, even those hot plugged
