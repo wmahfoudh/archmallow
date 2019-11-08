@@ -1,4 +1,12 @@
 # Completing Arch installation
+## Git
+````console
+sudo pacman -S git
+git config --global color.diff auto
+git config --global color.status auto
+git config --global user.name "name"
+git config --global user.email "email"
+````
 ## ZSH
 Check current shell with ``echo $SHELL``, then install ZSH and its useful plugins
 ````console
@@ -8,18 +16,18 @@ Launch ZSH by typing ``zsh``. Here is how to launch the configuration script if 
 ````console
 zsh /usr/share/zsh/functions/Newuser/zsh-newuser-install -f
 ````
+Clone Autosuggestions
+````console
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+````
+Add it to `.zhrc`
+````console
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+````
 To setup ZSH as default shell for root user for example
 ````console
 sudo -s
 chsh -s /usr/bin/zsh root
-````
-## Git
-````console
-sudo pacman -S git
-git config --global color.diff auto
-git config --global color.status auto
-git config --global user.name "name"
-git config --global user.email "email"
 ````
 ## Yay
 ````console
