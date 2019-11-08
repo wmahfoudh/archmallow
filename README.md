@@ -17,7 +17,7 @@ This is a n00bs collection of notes and templates related to installing Arch and
 - [Dual-boot time problem](./docs/time-problem.md)
 
 # Other
-- [Other goodies](./docs/more.md)
-- [Some Pacman useful commands](./docs/useful-pacman-commands.md)
+- [Miscellaneous](./docs/more.md)
+- [Pacman memo](./docs/useful-pacman-commands.md)
 # Putting it all together
 ![Putting it all together](./home/screenshots/archmallow.png)
