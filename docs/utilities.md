@@ -20,7 +20,7 @@ Clone Autosuggestions
 ````console
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 ````
-Add it to `.zhrc`
+Add it to `.zshrc`
 ````console
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ````
