@@ -18,7 +18,7 @@ sudo pacman -S python-pip
 ````bash
 sudo pacman -S thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman gvfs tumbler
 ````
-## proxmark
+## proxmark3
 ````bash
 git clone https://github.com/proxmark/proxmark3.git
 cd proxmark3
@@ -26,6 +26,7 @@ git pull
 sudo cp -rf driver/77-mm-usb-device-blacklist.rules /etc/udev/rules.d/77-mm-usb-device-blacklist.rules
 sudo udevadm control --reload-rules
 sudo usermod -aG uucp $USER
+sudo pacman -S pcsclite
 make clean && make all
 cd client
 ./proxmark3 /dev/ttyACM0
