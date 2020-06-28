@@ -1,0 +1,24 @@
+[meta]
+major-version=0
+minor-version=4
+
+[print-settings]
+cover-before=none
+scale=100
+number-up=1
+reverse=false
+page-set=all
+cover-after=none
+print-pages=all
+printer=Canon SELPHY CP1200
+cups-number-up=1
+collate=false
+print-at-time=
+cups-job-priority=50
+print-at=now
+
+[image-setup]
+unit=2
+center-mode=3
+use-full-page=false
+crop-marks=false

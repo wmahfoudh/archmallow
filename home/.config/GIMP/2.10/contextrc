@@ -1,0 +1,15 @@
+# GIMP user context
+
+(tool "gimp-crop-tool")
+(paint-info "gimp-paintbrush")
+(foreground (color-rgb 1 0.89411771297454834 1))
+(brush "2. Block 02")
+(dynamics "Dynamics Off")
+(mybrush "100% Opaque")
+(pattern "Marble #1")
+(gradient "FG to BG (RGB)")
+(palette "Color History")
+(font "Utopia Bold")
+(tool-preset "Core Pointer")
+
+# end of user context

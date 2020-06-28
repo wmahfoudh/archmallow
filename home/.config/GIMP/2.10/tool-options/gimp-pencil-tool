@@ -1,0 +1,13 @@
+# GIMP gimp-pencil-tool options
+
+(foreground (color-rgb 1 0.89411771297454834 1))
+(brush "2. Block 02")
+(dynamics "Dynamics Off")
+(gradient "FG to BG (RGB)")
+(palette "Color History")
+(brush-size 51)
+(brush-aspect-ratio 1.5789473684210527)
+(brush-spacing 0.20000000000000001)
+(brush-hardness 0.75)
+
+# end of gimp-pencil-tool options

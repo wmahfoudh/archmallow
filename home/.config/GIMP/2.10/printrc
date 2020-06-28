@@ -1,0 +1,46 @@
+#PRINTRCv5 written by Gutenprint 5.3.3 - 25 Aug 2019
+
+Global-Settings:
+  Current-Printer: "Printer"
+  Show-All-Paper-Sizes: True
+  PrintCommand ""
+  QueueSelect ""
+  RawOutputFlag ""
+  ScanPrintersCommand ""
+  PrintingSystem "Autodetect"
+  ScanOnStartup "False"
+End-Global-Settings:
+
+Printer: "Printer" "canon-cp1200"
+  Command-Type: 0
+  Queue-Name: "SELPHY-CP1200"
+  Output-Filename: ""
+  Extra-Printer-Options: ""
+  Custom-Command: ""
+  Scaling: -150768.000000
+  Orientation: -1
+  Autosize-Roll-Paper: 0
+  Unit: 3
+  Left: 13.000000
+  Top: 16.000000
+  Custom_Page_Width: 299.520000
+  Custom_Page_Height: 449.280000
+  Parameter STPUICopyCount Int True 1
+  Parameter PageSize String True "Postcard"
+  Parameter MediaType String True "Standard"
+  Parameter Resolution String True "300x300"
+  Parameter InkType String True "CMY"
+  Parameter Laminate String True "Standard"
+  Parameter Borderless Boolean True False
+  Parameter PrintingMode String True "Color"
+  Parameter Duplex String True "Standard"
+  Parameter ColorCorrection String True "None"
+  Parameter ChannelBitDepth String True "8"
+  Parameter InputImageType String True "RGB"
+  Parameter Brightness Double True 1.000000
+  Parameter Contrast Double True 1.000000
+  Parameter LinearContrast Boolean True False
+  Parameter Saturation Double True 1.000000
+  Parameter Quality String True "Standard"
+  Parameter ImageType String True "TextGraphics"
+  Parameter JobMode String True "Page"

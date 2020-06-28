@@ -1,0 +1,31 @@
+[global_config]
+  enabled_plugins = InactivityWatch, CustomCommandsMenu, TestPlugin, ActivityWatch, TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  extra_styling = False
+  sticky = True
+  tab_position = right
+  title_hide_sizetext = True
+  title_transmit_bg_color = "#204a87"
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#232627"
+    background_darkness = 0.94
+    cursor_color = "#aaaaaa"
+    cursor_shape = underline
+    font = Source Code Pro 11
+    foreground_color = "#eeeeec"
+    icon_bell = False
+    palette = "#000000:#aa0000:#73d216:#f57900:#729fcf:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    show_titlebar = False
+    use_system_font = False
+    visible_bell = True

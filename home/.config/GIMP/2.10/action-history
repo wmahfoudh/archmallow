@@ -1,0 +1,26 @@
+# GIMP action-history
+
+(history-item "file-print-gtk" 0)
+(history-item "file-quit" 2)
+(history-item "image-resize" 2)
+(history-item "file-export-as" 1)
+(history-item "dockable-close-tab" 1)
+(history-item "file-print-gutenprint" 0)
+(history-item "windows-tab-position" 1)
+(history-item "edit-paste" 0)
+(history-item "dockable-detach-tab" 0)
+(history-item "dialogs-toolbox" 1)
+(history-item "dialogs-about" 0)
+(history-item "file-save" 0)
+(history-item "file-open" 0)
+(history-item "image-new" 0)
+(history-item "dialogs-preferences" 0)
+(history-item "edit-copy" 1)
+(history-item "image-resize-to-layers" 0)
+(history-item "documents-open" 0)
+(history-item "tools-vector" 0)
+(history-item "dialogs-histogram" 0)
+(history-item "dialogs-cursor" 0)
+(history-item "dialogs-selection-editor" 1)
+
+# end of action-history
