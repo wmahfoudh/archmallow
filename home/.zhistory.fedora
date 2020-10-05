@@ -433,20 +433,20 @@ sudo dnf install axel
 axel -h
 man axel
 cp grend.txt grend.ori
-ffmpeg -i Ocean �s\ Eleven\ FR.avi -c:v copy oceans11.mp4
+ffmpeg -i Oceanâ¹s\ Eleven\ FR.avi -c:v copy oceans11.mp4
 ls /run/media
 ls /run/media/walid/A7E6-CDA0
-cp Ocean �s\ Eleven\ FR.avi /run/media/walid/A7E6-CDA0/Ocean �s\ Eleven\ FR.avi
+cp Oceanâ¹s\ Eleven\ FR.avi /run/media/walid/A7E6-CDA0/Oceanâ¹s\ Eleven\ FR.avi
 cat grend.txt |xargs -d '\n' -l1  axel -akn 16 
 cd Vi
 cd Videos
- ffmpeg -i Ocean �s\ Eleven\ FR.avi -c:v libx264 -preset medium -crf 23 -profile:v high -level:v 4.1 -pix_fmt yuv420p -c:a aac *.mp4 
- ffmpeg -i Ocean �s\ Eleven\ FR.avi -c:v libx264 -preset medium -crf 23 -profile:v high -level:v 4.1 -pix_fmt yuv420p -c:a aac Oceans-11.mp4 
+ ffmpeg -i Oceanâ¹s\ Eleven\ FR.avi -c:v libx264 -preset medium -crf 23 -profile:v high -level:v 4.1 -pix_fmt yuv420p -c:a aac *.mp4 
+ ffmpeg -i Oceanâ¹s\ Eleven\ FR.avi -c:v libx264 -preset medium -crf 23 -profile:v high -level:v 4.1 -pix_fmt yuv420p -c:a aac Oceans-11.mp4 
 cp Oceans-11.mp4 /run/media/walid/A7E6-CDA0
 ffmpeg Oceans-11.mp4
- ffmpeg -i Ocean �s\ Eleven\ FR.avi -c:v libx264 -preset high -crf 23 -profile:v high -level:v 4.1 -pix_fmt yuv420p -c:a aac Oceans-11.mp4 
- ffmpeg -i Ocean �s\ Eleven\ FR.avi -c:v libx264 -preset placebo -crf 23 -profile:v high -level:v 4.1 -pix_fmt yuv420p -c:a aac Oceans-11.mp4 
-ffprobe Ocean �s\ Eleven\ FR.avi
+ ffmpeg -i Oceanâ¹s\ Eleven\ FR.avi -c:v libx264 -preset high -crf 23 -profile:v high -level:v 4.1 -pix_fmt yuv420p -c:a aac Oceans-11.mp4 
+ ffmpeg -i Oceanâ¹s\ Eleven\ FR.avi -c:v libx264 -preset placebo -crf 23 -profile:v high -level:v 4.1 -pix_fmt yuv420p -c:a aac Oceans-11.mp4 
+ffprobe Oceanâ¹s\ Eleven\ FR.avi
 ffprobe Oceans-11.mp4
 dmesg
 sudo dmesg | grep -i lan
