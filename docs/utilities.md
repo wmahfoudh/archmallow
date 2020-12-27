@@ -37,6 +37,21 @@ cd yay
 sudo pacman -S base-devel (if not installed)
 makepkg -si
 ````
+
+## Sound
+````console
+sudo pacman -S alsa-tools alsa-utils asoundconf sof-firmware alsa-ucm-conf
+sudo pacman -S pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pamixer pulsemixer
+````
+
+## KDE
+````console
+sudo pacman -Syu xorg plasma-desktop plasma-wayland-session plasma-wayland-protocols kde-applications sddm sddm-kcm
+sudo pacman -S bluedevil plasma-nm
+sudo pacman -S firefox terminator codeblocks
+sudo systemctl enable sddm.service
+````
+
 ## Compression and sync utilities
 ````console
 sudo pacman -S p7zip unrar tar rsync
