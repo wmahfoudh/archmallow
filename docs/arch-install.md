@@ -42,7 +42,7 @@ mount /dev/sda3 /mnt/home
 Install Arch
 ```bash
 timedatectl set-ntp true
-pacstrap /mnt base linux linux-firmware base-devel nano networkmanager man-db man-pages texinfo
+pacstrap /mnt base linux linux-firmware base-devel nano vi vim networkmanager man-db man-pages texinfo
 ```
 Generate file system table
 ```bash
