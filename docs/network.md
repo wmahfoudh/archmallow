@@ -1,7 +1,7 @@
 # Network Manager
 ## Installation
 ````console
-sudo pacman -S networkmanager network-manager-applet
+sudo pacman -S networkmanager network-manager-applet nm-connection-editor 
 ````
 To check if ``dhcpcd`` or ``netctl`` are enbled, enter
 ````console
@@ -9,6 +9,7 @@ systemctl --type=service
 ````
 In case yes, stop and then diable them before enabling Network Manager
 ````console
+sudo systemctl start NetworkManager.service
 sudo systemctl enable NetworkManager.service
 ````
 ## Ethernet related commands
