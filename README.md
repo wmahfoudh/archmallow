@@ -2,7 +2,7 @@
 This is not meant to be a *"yet another Arch installation tutorial"* but rather personal notes.
 
 # Installation
-- [Arch Linux install](./docs/arch-install.md)
+- [Basic installation](./docs/arch-install.md)
 - [Creating a new user](./docs/new-user.md)
 - [Network installation](./docs/network.md)
 - [Setting locale](./docs/locale.md)
