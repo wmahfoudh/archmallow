@@ -48,7 +48,7 @@ sudo pacman -S pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equali
 ````console
 sudo pacman -Syu xorg plasma-desktop plasma-wayland-session plasma-wayland-protocols kde-applications sddm sddm-kcm
 sudo pacman -S bluedevil plasma-nm
-sudo pacman -S firefox terminator codeblocks
+sudo pacman -S firefox terminator codeblocks sshfs
 sudo systemctl enable sddm.service
 ````
 
