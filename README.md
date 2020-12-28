@@ -14,7 +14,7 @@ This is not meant to be a *"yet another Arch installation tutorial"* but rather 
 - [Pacman memo](./docs/useful-pacman-commands.md)
 - [Dual-boot time problem](./docs/time-problem.md)
 
-# Non maintained
+# Not maintained
 - [Enabling Num Lock on startup](./docs/numlock.md)
 - [Installing i3-gaps](./docs/i3-gaps.md)
 - [Notes on sound setup](./docs/sound.md)
