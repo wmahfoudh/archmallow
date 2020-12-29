@@ -1,8 +1,7 @@
-# More useful stuff
+# Useful stuff
 The installation discribed in previous steps provides a "minimal and working system", for more specific use, here are few other tools (sorted in alphabetic order)
 ## dvgrab
 For capturing video and audio from FireWire cameras (IEEE 1394), you need ``dvgrab``
-
 Install it with ``sudo pacman -S dvgrab``. A typical use would be
 
 ````bash
@@ -30,4 +29,16 @@ sudo pacman -S pcsclite
 make clean && make all
 cd client
 ./proxmark3 /dev/ttyACM0
+````
+## That onion
+````bash
+sudo pacman -S openvpn dialog
+sudo pip3 install protonvpn-cli
+sudo protonvpn init
+protonvpn examples
+sudo protonvpn c --cc US -p udp
+sudo pacman -S tor
+gpg --verbose --auto-key-locate nodefault,wkd --locate-keys torbrowser@torproject.org
+yay -S tor-browser
+tor-browser -u
 ````
