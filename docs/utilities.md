@@ -60,10 +60,13 @@ sudo systemctl enable sddm.service
 ## Printer
 ````console
 sudo pacman -S cups cups-pdf
+sudo usermod -aG lp $USER
+sudo groupadd lpadmin
+sudo usermod -aG lpadmin $USER
 sudo systemctl enable cups.service
-sudo systemctl start cups.service
-nano /etc/cups/cups-pdf.conf (to modify pdf printing default settings)
-
+sudo systemctl start cups.service (cups web server available at http://localhost:631/)
+nano /etc/cups/cups-pdf.conf (to modify pdf printing default settings, it is also better to restart whenver adding a new driver)
+yay -S epson-inkjet-printer-escpr
 ````
 ## Codecs
 ````console
