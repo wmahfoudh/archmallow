@@ -43,13 +43,11 @@ cd yay
 sudo pacman -S base-devel (if not installed)
 makepkg -si
 ````
-
 ## Sound
 ````console
 sudo pacman -S alsa-tools alsa-utils asoundconf sof-firmware alsa-ucm-conf
 sudo pacman -S pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equalizer pamixer pulsemixer
 ````
-
 ## KDE
 ````console
 sudo pacman -Syu xorg plasma-desktop plasma-wayland-session plasma-wayland-protocols kde-applications sddm sddm-kcm
@@ -57,23 +55,22 @@ sudo pacman -S bluedevil plasma-nm sshfs
 sudo pacman -S firefox terminator codeblocks sshfs
 sudo systemctl enable sddm.service
 ````
-
-## Compression and sync utilities
-````console
-sudo pacman -S p7zip unrar tar rsync
-````
 ## Codecs
 ````console
 sudo pacman -S a52dec faac faad2 flac jasper lame libdca libdv gst-libav libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore flashplugin libdvdcss libdvdread libdvdnav dvd+rw-tools dvdauthor dvgrab gstreamer
 ````
-## ACPI
+## Virtualbox
 ````console
-sudo pacman -S acpi
+sudo pacman -S virtualbox virtualbox-guest-iso (chose virtualbox-host-modules-arch for linux kernel)
+yay -S  virtualbox-ext-oracle
+sudo groupadd vboxusers (sometimes needs to be added manually)
+sudo usermod -aG vboxusers user
 ````
-## Some fonts
+## Makeup
+### Fonts
 ````console
 sudo pacman -S adobe-source-sans-pro-fonts aspell-en enchant gst-libav gst-plugins-good icedtea-web jre8-openjdk languagetool libmythes mythes-en pkgstats ttf-anonymous-pro ttf-bitstream-vera ttf-dejavu ttf-droid ttf-liberation ttf-ubuntu-font-family awesome-terminal-fonts ttf-font-awesome otf-font-awesome
-yay -S ttf-win10 ttf-ms-win8-arabic
+yay -S ttf-win10
 ````
 List available fonts with
 ````console
@@ -86,18 +83,6 @@ To change tty font create or edit ``/etc/vconsole.conf`` as follows
 FONT=LatGrkCyr-8x16.psfu
 FONT_MAP=8859-2
 ````
-## Virtualbox
-````console
-sudo pacman -S virtualbox virtualbox-guest-iso (chose virtualbox-host-modules-arch for linux kernel)
-yay -S  virtualbox-ext-oracle
-sudo groupadd vboxusers (sometimes needs to be added manually)
-sudo usermod -aG vboxusers user
-````
-## Miscellaneous
-````console
-sudo pacman -S openssh cmatrix neofetch
-````
-## Makeup
 ### Themes
 ````console
 sudo pacman -S breeze-gtk adapta-gtk-theme arc-gtk-theme arc-solid-gtk-theme deepin-gtk-theme
@@ -113,4 +98,8 @@ sudo pacman -S adwaita-icon-theme arc-icon-theme mate-icon-theme sugar-artwork t
 ### Cursors
 ````console
 sudo pacman -S xcursor-bluecurve xcursor-flatbed xcursor-neutral xcursor-simpleandsoft xcursor-pinux xcursor-vanilla-dmz xcursor-vanilla-dmz-aa
+````
+## Miscellaneous
+````console
+sudo pacman -S openssh cmatrix neofetch acpi p7zip unrar tar rsync
 ````
