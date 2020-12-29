@@ -6,6 +6,17 @@ Install it with ``sudo pacman -S dvgrab``. A typical use would be
 ````bash
 dvgrab --autosplit --timestamp --size 0 --rewind FilesName-
 ````
+# Blocking internet access for one program
+````bash
+sudo pacman -S firejail
+firejail --net=none program_to_block
+````
+# Installing debian packages on Arch
+````bash
+yay -S debtap
+debtap -q package.deb (will generate package.pkg.tar.zst)
+sudo pacman -U package.pkg.tar.zst
+````
 ## python-pip
 For installing Python packages
 ````bash
