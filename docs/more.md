@@ -1,5 +1,4 @@
 # Useful stuff
-The installation discribed in previous steps provides a "minimal and working system", for more specific use, here are few other tools (sorted in alphabetic order)
 ## dvgrab
 For capturing video and audio from FireWire cameras (IEEE 1394), you need ``dvgrab``
 Install it with ``sudo pacman -S dvgrab``. A typical use would be
