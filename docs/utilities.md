@@ -96,7 +96,7 @@ sudo usermod -aG vboxusers user
 ````console
 sudo pacman -S openssh cmatrix neofetch
 ````
-## Makup
+## Makeup
 ### Themes
 ````console
 sudo pacman -S breeze-gtk adapta-gtk-theme arc-gtk-theme arc-solid-gtk-theme deepin-gtk-theme
