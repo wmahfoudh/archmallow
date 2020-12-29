@@ -5,7 +5,13 @@ sudo pacman -S git
 git config --global color.diff auto
 git config --global color.status auto
 git config --global user.name "name"
-git config --global user.email "email"
+git config --global user.email "email-address"
+ssh-keygen -t ed25519 -C "email-address"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/newly-generated-private-key
+ssh -T git@github.com
+git remote -v
+git remote set-url origin  git@github.com:user/repo.git
 ````
 ## ZSH
 Check current shell with ``echo $SHELL``, then install ZSH and its useful plugins
@@ -47,7 +53,7 @@ sudo pacman -S pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equali
 ## KDE
 ````console
 sudo pacman -Syu xorg plasma-desktop plasma-wayland-session plasma-wayland-protocols kde-applications sddm sddm-kcm
-sudo pacman -S bluedevil plasma-nm
+sudo pacman -S bluedevil plasma-nm sshfs
 sudo pacman -S firefox terminator codeblocks sshfs
 sudo systemctl enable sddm.service
 ````
@@ -79,7 +85,19 @@ To change tty font create or edit ``/etc/vconsole.conf`` as follows
 FONT=LatGrkCyr-8x16.psfu
 FONT_MAP=8859-2
 ````
-## Themes
+## Virtualbox
+````console
+sudo pacman -S virtualbox virtualbox-guest-iso (chose virtualbox-host-modules-arch for linux kernel)
+yay -S  virtualbox-ext-oracle
+sudo groupadd vboxusers (sometimes needs to be added manually)
+sudo usermod -aG vboxusers user
+````
+## Miscellaneous
+````console
+sudo pacman -S openssh cmatrix neofetch
+````
+## Makup
+### Themes
 ````console
 sudo pacman -S breeze-gtk adapta-gtk-theme arc-gtk-theme arc-solid-gtk-theme deepin-gtk-theme
 ````
@@ -87,19 +105,11 @@ and
 ````console
 sudo pacman -S lxappearance-gtk3 qt5ct
 ````
-## Icons
+### Icons
 ````console
 sudo pacman -S adwaita-icon-theme arc-icon-theme mate-icon-theme sugar-artwork tangerine-icon-theme faenza-icon-theme deepin-icon-theme elementary-icon-theme oxygen-icons-svg adwaita-icon-theme breeze-icons
 ````
-## Cursors
+### Cursors
 ````console
 sudo pacman -S xcursor-bluecurve xcursor-flatbed xcursor-neutral xcursor-simpleandsoft xcursor-pinux xcursor-vanilla-dmz xcursor-vanilla-dmz-aa
-````
-## Screen shot & image utilities
-````console
-sudo pacman -S scrot feh
-````
-## and of course...
-````console
-sudo pacman -S openssh cmatrix neofetch
 ````
