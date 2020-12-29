@@ -57,6 +57,14 @@ sudo pacman -S bluedevil plasma-nm sshfs
 sudo pacman -S firefox terminator codeblocks sshfs
 sudo systemctl enable sddm.service
 ````
+## Printer
+````console
+sudo pacman -S cups cups-pdf
+sudo systemctl enable cups.service
+sudo systemctl start cups.service
+nano /etc/cups/cups-pdf.conf (to modify pdf printing default settings)
+
+````
 ## Codecs
 ````console
 sudo pacman -S a52dec faac faad2 flac jasper lame libdca libdv gst-libav libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore flashplugin libdvdcss libdvdread libdvdnav dvd+rw-tools dvdauthor dvgrab gstreamer
