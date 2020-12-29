@@ -73,6 +73,7 @@ sudo pacman -S acpi
 ## Some fonts
 ````console
 sudo pacman -S adobe-source-sans-pro-fonts aspell-en enchant gst-libav gst-plugins-good icedtea-web jre8-openjdk languagetool libmythes mythes-en pkgstats ttf-anonymous-pro ttf-bitstream-vera ttf-dejavu ttf-droid ttf-liberation ttf-ubuntu-font-family awesome-terminal-fonts ttf-font-awesome otf-font-awesome
+yay -S ttf-win10 ttf-ms-win8-arabic
 ````
 List available fonts with
 ````console
