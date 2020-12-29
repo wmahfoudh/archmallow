@@ -101,5 +101,6 @@ sudo pacman -S xcursor-bluecurve xcursor-flatbed xcursor-neutral xcursor-simplea
 ````
 ## Miscellaneous
 ````console
-sudo pacman -S openssh cmatrix neofetch acpi p7zip unrar tar rsync
+sudo pacman -S openssh cmatrix neofetch acpi p7zip tar rsync dvgrab python-pip
+yay -S rar
 ````
