@@ -7,7 +7,7 @@ Install it with ``sudo pacman -S dvgrab``. A typical use would be
 dvgrab --autosplit --timestamp --size 0 --rewind FilesName-
 ````
 ## python-pip
-If you're a Python programmer you would need PyPA recommended tool for installing Python packages
+For installing Python packages
 ````bash
 sudo pacman -S python-pip
 ````
