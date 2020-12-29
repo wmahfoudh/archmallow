@@ -59,7 +59,7 @@ sudo systemctl enable sddm.service
 ````
 ## Printer
 ````console
-sudo pacman -S cups cups-pdf
+sudo pacman -S cups cups-pdf ghostscript libcups
 sudo usermod -aG lp $USER
 sudo groupadd lpadmin
 sudo usermod -aG lpadmin $USER
@@ -114,6 +114,6 @@ sudo pacman -S xcursor-bluecurve xcursor-flatbed xcursor-neutral xcursor-simplea
 ````
 ## Miscellaneous
 ````console
-sudo pacman -S openssh cmatrix neofetch acpi p7zip tar rsync dvgrab python-pip openvpn dialog
+sudo pacman -S openssh cmatrix neofetch acpi p7zip tar rsync dvgrab python-pip openvpn dialog usbutils
 yay -S rar
 ````
