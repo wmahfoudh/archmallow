@@ -57,6 +57,11 @@ sudo pacman -S bluedevil plasma-nm sshfs
 sudo pacman -S firefox terminator codeblocks sshfs
 sudo systemctl enable sddm.service
 ````
+In some cases the profile pictures do not show at statup in SDDM, try resizing the image to 256x256 or rename it to .face.icon and copy it to home folder and then run
+````console
+setfacl -m u:sddm:x /home/user
+setfacl -m u:sddm:r /home/user/.face.icon
+````
 ## Printer
 ````console
 sudo pacman -S cups cups-pdf ghostscript libcups
