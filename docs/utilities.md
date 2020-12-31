@@ -62,6 +62,8 @@ In some cases the profile pictures do not show at statup in SDDM, try resizing t
 setfacl -m u:sddm:x /home/user
 setfacl -m u:sddm:r /home/user/.face.icon
 ````
+Deactivate the Tool Tips interfering with contact menus in Settings <Worskapce behaviour><General behaviour>
+  
 ## Printer
 ````console
 sudo pacman -S cups cups-pdf ghostscript libcups
@@ -73,6 +75,19 @@ sudo systemctl start cups.service (cups web server available at http://localhost
 nano /etc/cups/cups-pdf.conf (to modify pdf printing default settings, it is also better to restart whenver adding a new driver)
 yay -S epson-inkjet-printer-escpr
 ````
+## Scanner
+````console
+sudo pacman -S imagescan
+yay -S imagescan-plugin-networkscan
+sudo nano /etc/utsushi/utsushi.conf
+````
+add the following in the [devices] section and then reboot
+````console
+dev2.udi    = esci:networkscan://192.168.0.137:1865
+dev2.model  = L3150
+dev2.vendor = EPSON
+````
+Access the scanner utility with `utsushi`
 ## Codecs
 ````console
 sudo pacman -S a52dec faac faad2 flac jasper lame libdca libdv gst-libav libmad libmpeg2 libtheora libvorbis libxv wavpack x264 xvidcore flashplugin libdvdcss libdvdread libdvdnav dvd+rw-tools dvdauthor dvgrab gstreamer
