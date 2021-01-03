@@ -30,7 +30,21 @@ make clean && make all
 cd client
 ./proxmark3 /dev/ttyACM0
 ````
-## That onion
+## proxmark3 (Iceman)
+````bash
+sudo pacman -Sy git base-devel readline bzip2 arm-none-eabi-gcc arm-none-eabi-newlib qt5-base bluez --needed
+git clone https://github.com/RfidResearchGroup/proxmark3.git
+sudo systemctl stop ModemManager
+sudo systemctl disable ModemManager
+````
+Plug the device and type `sudo dmesg | grep -i usb` if okay something alike should show:
+````bash
+usb 2-1.2: Product: PM3
+usb 2-1.2: Manufacturer: proxmark.org
+cdc_acm 2-1.2:1.0: ttyACM0: USB ACM device
+````
+
+## Smells like onion
 ````bash
 sudo pacman -S openvpn dialog
 sudo pip3 install protonvpn-cli
