@@ -136,4 +136,5 @@ sudo pacman -S xcursor-bluecurve xcursor-flatbed xcursor-neutral xcursor-simplea
 ````console
 sudo pacman -S openssh cmatrix neofetch acpi p7zip tar rsync dvgrab python-pip openvpn dialog usbutils
 yay -S rar
+sudo pacman -S mediainfo mediainfo-gui
 ````
