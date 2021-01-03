@@ -134,7 +134,7 @@ sudo pacman -S xcursor-bluecurve xcursor-flatbed xcursor-neutral xcursor-simplea
 ````
 ## Miscellaneous
 ````console
-sudo pacman -S openssh cmatrix neofetch acpi p7zip tar rsync dvgrab python-pip openvpn dialog usbutils qbittorrent python-pip
+sudo pacman -S openssh cmatrix neofetch acpi p7zip tar rsync dvgrab python-pip openvpn dialog usbutils qbittorrent python-pip dvgrab
 yay -S rar
 sudo pacman -S mediainfo mediainfo-gui
 sudo pacman -S ardour audacity vlc obs-studio blender synfigstudio kdenlive krita
