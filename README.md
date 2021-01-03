@@ -7,7 +7,7 @@ This is not meant to be a *"yet another Arch installation tutorial"* but rather 
 - [Network installation](./docs/network.md)
 - [Setting locale](./docs/locale.md)
 - [Bluetooth](./docs/bluetooth.md)
-- [Utilz](./docs/utilities.md)
+- [Completing the installation](./docs/utilities.md)
 
 # Other
 - [Miscellaneous](./docs/more.md)
