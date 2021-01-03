@@ -140,4 +140,6 @@ sudo pacman -S mediainfo mediainfo-gui
 sudo pacman -S ardour audacity vlc obs-studio blender synfigstudio kdenlive krita
 sudo pacman -S mypaint mypaint-brushes mypaint-brushes1 libmypaint
 sudo pacman -S gimp rawtherapee darktable
+sudo pacman -S picard
+yay -S picard-plugins-git
 ````
