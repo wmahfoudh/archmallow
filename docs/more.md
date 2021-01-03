@@ -17,16 +17,6 @@ yay -S debtap
 debtap -q package.deb (will generate package.pkg.tar.zst)
 sudo pacman -U package.pkg.tar.zst
 ````
-## python-pip
-For installing Python packages
-````bash
-sudo pacman -S python-pip
-````
-## thunar
-[thunar](https://wiki.archlinux.org/index.php/Thunar) (a lightweight files manager)
-````bash
-sudo pacman -S thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman gvfs tumbler
-````
 ## proxmark3
 ````bash
 git clone https://github.com/proxmark/proxmark3.git
