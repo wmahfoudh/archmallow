@@ -137,4 +137,7 @@ sudo pacman -S xcursor-bluecurve xcursor-flatbed xcursor-neutral xcursor-simplea
 sudo pacman -S openssh cmatrix neofetch acpi p7zip tar rsync dvgrab python-pip openvpn dialog usbutils
 yay -S rar
 sudo pacman -S mediainfo mediainfo-gui
+sudo pacman -S ardour audacity vlc obs-studio blender synfigstudio kdenlive krita
+sudo pacman -S mypaint mypaint-brushes mypaint-brushes1 libmypaint
+sudo pacman -S gimp rawtherapee darktable
 ````
