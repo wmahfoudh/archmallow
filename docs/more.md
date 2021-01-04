@@ -1,5 +1,4 @@
-# Miscelaneous
-## dvgrab
+# dvgrab
 For capturing video and audio from FireWire cameras (IEEE 1394), you need ``dvgrab``
 Install it with ``sudo pacman -S dvgrab``. A typical use would be
 
@@ -49,7 +48,13 @@ For clones non RDV4 proxmark create a file `Makefile.platform` containing `PLATF
 Compile `make clean && make all`, install `sudo make install`
 Flash the bootloader first `./pm3-flash-bootrom` then flash the image `./pm3-flash-fullimage`
 If everything is fine, `ls /dev/ttyA*` should give `/dev/ttyACM0`
-## Usage
+## Usage notes
+### EM410
+````bash
+lf em 410x reader
+-> EM 410x ID 0F0368568B
+lf em 410x clone --uid 0F0368568B
+````
 
 # Smells like onion
 ````bash
