@@ -43,7 +43,10 @@ usb 2-1.2: Product: PM3
 usb 2-1.2: Manufacturer: proxmark.org
 cdc_acm 2-1.2:1.0: ttyACM0: USB ACM device
 ````
-
+For clones non RDV4 proxmark create a file `Makefile.platform` containing `PLATFORM=PM3OTHER` before compiling
+Compile `make clean && make all`, install `sudo make install`
+Flash the bootloader first `./pm3-flash-bootrom` then flash the image `./pm3-flash-fullimage`
+If everything is fine, `ls /dev/ttyA*` should give `/dev/ttyACM0`
 ## Smells like onion
 ````bash
 sudo pacman -S openvpn dialog
