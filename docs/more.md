@@ -17,7 +17,9 @@ yay -S debtap
 debtap -q package.deb (will generate package.pkg.tar.zst)
 sudo pacman -U package.pkg.tar.zst
 ````
-## proxmark3
+# proxmark3
+Don't install binaries from AUR, you might need to teak the compilation to match your hardware
+## Regular repo
 ````bash
 git clone https://github.com/proxmark/proxmark3.git
 cd proxmark3
@@ -30,7 +32,7 @@ make clean && make all
 cd client
 ./proxmark3 /dev/ttyACM0
 ````
-## proxmark3 (Iceman)
+## Iceman Repo
 ````bash
 sudo pacman -Sy git base-devel readline bzip2 arm-none-eabi-gcc arm-none-eabi-newlib qt5-base bluez --needed
 git clone https://github.com/RfidResearchGroup/proxmark3.git
@@ -47,7 +49,9 @@ For clones non RDV4 proxmark create a file `Makefile.platform` containing `PLATF
 Compile `make clean && make all`, install `sudo make install`
 Flash the bootloader first `./pm3-flash-bootrom` then flash the image `./pm3-flash-fullimage`
 If everything is fine, `ls /dev/ttyA*` should give `/dev/ttyACM0`
-## Smells like onion
+## Usage
+
+# Smells like onion
 ````bash
 sudo pacman -S openvpn dialog
 sudo pip3 install protonvpn-cli
