@@ -55,7 +55,21 @@ lf em 410x reader
 -> EM 410x ID 0F0368568B
 lf em 410x clone --uid 0F0368568B
 ````
-
+### MIFARE 1K
+````bash
+-> Save the UID, example 0F0368568B
+hf search
+-> Finds at least one default key, example ffffffffffff
+hf mf chk * ? or hf mf mifare
+-> dump the keys
+hf mf nested 1 0 A ffffffffffff d
+-> dump the data
+hf mf dump
+-> Restore the data
+hf mf restore 1 u 0F0368568B
+-> Restore the UID
+hf mf csetuid 0F0368568B
+````
 # Smells like onion
 ````bash
 sudo pacman -S openvpn dialog
