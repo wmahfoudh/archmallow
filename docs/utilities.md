@@ -68,6 +68,15 @@ Deactivate the Tool Tips interfering with contact menus in Settings <Worskapce b
   - Screen rotation: `sudo -S iio-sensor-proxy` and `yay -S kded-rotation-git`
   - Tablet mode: `yay -S detect-tablet-mode-git`
   - On-screen keyboard: `sudo pacman -S qt5-virtualkeyboard`
+### Search in Dolphin
+Edit `   ` and add:
+```console
+[Basic Settings]
+Indexing-Enabled=true
+[General]
+index hidden folders=true
+folders[$e]=$HOME/, /data
+````
 ## Printer
 ````console
 sudo pacman -S cups cups-pdf ghostscript libcups
