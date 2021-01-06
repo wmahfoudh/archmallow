@@ -63,7 +63,11 @@ setfacl -m u:sddm:x /home/user
 setfacl -m u:sddm:r /home/user/.face.icon
 ````
 Deactivate the Tool Tips interfering with contact menus in Settings <Worskapce behaviour><General behaviour>
-  
+### Tablet related (partial support in Wayland)
+  - Stylus: `sudo -S xf86-input-wacom`
+  - Screen rotation: `sudo -S iio-sensor-proxy` and `yay -S kded-rotation-git`
+  - Tablet mode: `yay -S detect-tablet-mode-git`
+  - On-screen keyboard: `sudo pacman -S qt5-virtualkeyboard`
 ## Printer
 ````console
 sudo pacman -S cups cups-pdf ghostscript libcups
