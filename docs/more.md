@@ -18,7 +18,7 @@ sudo pacman -U package.pkg.tar.zst
 ````
 # proxmark3
 Don't install binaries from AUR, you might need to teak the compilation to match your hardware
-## Regular repo
+## Stock repo
 ````bash
 git clone https://github.com/proxmark/proxmark3.git
 cd proxmark3
@@ -31,7 +31,7 @@ make clean && make all
 cd client
 ./proxmark3 /dev/ttyACM0
 ````
-## Iceman Repo
+## Iceman repo
 ````bash
 sudo pacman -Sy git base-devel readline bzip2 arm-none-eabi-gcc arm-none-eabi-newlib qt5-base bluez --needed
 git clone https://github.com/RfidResearchGroup/proxmark3.git
@@ -44,7 +44,7 @@ usb 2-1.2: Product: PM3
 usb 2-1.2: Manufacturer: proxmark.org
 cdc_acm 2-1.2:1.0: ttyACM0: USB ACM device
 ````
-For clones non RDV4 proxmark create a file `Makefile.platform` containing `PLATFORM=PM3OTHER` before compiling
+For clones (non RDV4), create a file `Makefile.platform` containing `PLATFORM=PM3OTHER` before compiling
 Compile `make clean && make all`, install `sudo make install`
 Flash the bootloader first `./pm3-flash-bootrom` then flash the image `./pm3-flash-fullimage`
 If everything is fine, `ls /dev/ttyA*` should give `/dev/ttyACM0`
