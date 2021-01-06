@@ -68,8 +68,8 @@ Deactivate the Tool Tips interfering with contact menus in Settings <Worskapce b
   - Screen rotation: `sudo -S iio-sensor-proxy` and `yay -S kded-rotation-git`
   - Tablet mode: `yay -S detect-tablet-mode-git`
   - On-screen keyboard: `sudo pacman -S qt5-virtualkeyboard`
-### Search in Dolphin
-Edit `   ` and add:
+### Fix the search in Dolphin
+Edit `~/.config/baloofilerc` and add:
 ```console
 [Basic Settings]
 Indexing-Enabled=true
@@ -77,6 +77,7 @@ Indexing-Enabled=true
 index hidden folders=true
 folders[$e]=$HOME/, /data
 ````
+Then run `balooctl check`
 ## Printer
 ````console
 sudo pacman -S cups cups-pdf ghostscript libcups
