@@ -53,7 +53,7 @@ sudo pacman -S pulseaudio pulseaudio-alsa pulseaudio-bluetooth pulseaudio-equali
 sudo pacman -S xorg plasma-desktop plasma-wayland-session plasma-wayland-protocols kde-applications sddm sddm-kcm
 (or instead of kde-applications the ones I prefer)
 sudo pacman -S ark cantor dolphin dolphin-plugins ffmpegthumbs gwenview kamera kamoso kate kcachegrind kcalc kcharselect kcolorchooser kcron kdeconnect kdegraphics-mobipocket kdegraphics-thumbnailers kdenetwork-filesharing kdenlive kdesdk-thumbnailers kdf kfind kget khelpcenter kmix kmousetool kmouth kmplot konsole konversation ktorrent ktouch kwalletmanager kwave kwrite okular partitionmanager signon-kwallet-extension spectacle svgpart sweeper umbrello zeroconf-ioslave
-sudo pacman -S bluedevil plasma-nm sshfs
+sudo pacman -S bluedevil plasma-nm sshfs powerdevil
 sudo pacman -S firefox terminator codeblocks sshfs
 sudo systemctl enable sddm.service
 ````
