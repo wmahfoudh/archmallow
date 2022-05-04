@@ -106,7 +106,7 @@ Get full packages list
 ````bash
 pacman -Q > ~/pacman.list
 ````
-# Updating with invalid or corrupted package (PGP signature)
+# Updating with corrupted PGP signatures ("invalid or corrupted package" error)
 This usually happens when system is not maintained for long, PGP keys get obsolete, they need to be updated 
 ````bash
 pacman -Sy archlinux-keyring
@@ -114,7 +114,8 @@ pacman-key --populate archlinux
 pacman-key --refresh-keys
 pacman -Syu
 ````
-If the update still fails, chances are some dependencies need to be ignored and default options forced to avoid confirmation
+If the update still fails, it can be forced by ignoring dependencies, the below also forces default options to avoid multiple confirmations due to a non maintained system
+
 ````bash
 pacman -Syu -d --noconfirm
 ````
