@@ -1,3 +1,11 @@
+# Shared NTFS partitons fix
+When trying to mount a an NFTS partition shared with Windows in R/W mode, it might be not possible because Windows messes the partition flag and the following message is returned ``Could not mount read-write, trying read-only``
+Need to fix before trying to mount:
+````bash
+sudo umount /data
+sudo ntfsfix /dev/nvme0n1p5
+sudo mount /dev/nvme0n1p5 /data -rw
+````
 # dvgrab
 For capturing video and audio from FireWire cameras (IEEE 1394), you need ``dvgrab``
 Install it with ``sudo pacman -S dvgrab``. A typical use would be
