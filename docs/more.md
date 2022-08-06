@@ -104,3 +104,4 @@ and replace it by
 Exec=/usr/bin/google-chrome-stable --force-device-scale-factor=1.2 %U
 ````
 if this still doesn't work, edit the desktop shortcut like above and remove the %U
+the ``%U`` parameter is used to pass URLs to Chrome and not needed anyway in a default desktop shortcut
