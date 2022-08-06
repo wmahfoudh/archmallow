@@ -90,3 +90,17 @@ gpg --verbose --auto-key-locate nodefault,wkd --locate-keys torbrowser@torprojec
 yay -S tor-browser
 tor-browser -u
 ````
+# Fixing Chrome font size
+A temporary solution is to run Chrome with a scale factor like so
+````bash
+google-chrome-stable --force-device-scale-factor=1.2
+````
+To make it permanent, edit ``/usr/share/applications/google-chrome.desktop`` around line 109
+````bash
+Exec=/usr/bin/google-chrome-stable %U
+````
+and replace it by
+````bash
+Exec=/usr/bin/google-chrome-stable --force-device-scale-factor=1.2 %U
+````
+if this still doesn't work, edit the desktop shortcut like above and remove the %U
