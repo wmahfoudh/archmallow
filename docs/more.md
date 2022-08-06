@@ -91,7 +91,7 @@ yay -S tor-browser
 tor-browser -u
 ````
 # Fixing Chrome font size
-A temporary solution is to run Chrome with a scale factor like so
+A temporary solution is to run Chrome with a scale factor (1.2 in the example here) like so
 ````bash
 google-chrome-stable --force-device-scale-factor=1.2
 ````
