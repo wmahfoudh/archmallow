@@ -50,5 +50,6 @@ Key=F51BBFA0490561B8A87E62A7670A8D99
 
 On Windows, the keys are stored in the registry ``LOCAL_MACHINE\CurrentControlSet\services\BTHPORT\Parameters\Keys`` just followed by the mac address of the device. If no ``CurrentControlSet`` try ``Controlset001`` an so on
 
-This technique works on Windows with Microsoft bluetooth stack, some vendors like Toshiba have their own stack, and the authentication keys are not stored in the registry [(Toshiba stores them in a local encrypted database)](https://duckduckgo.com/?q=archmallow+github+wmhfoudh&t=ffab&atb=v193-7&ia=software)
+This technique works on Windows with Microsoft bluetooth stack, some vendors like Toshiba have their own stack, and the authentication keys are not stored in the registry (Toshiba stores them in a local encrypted database).
+
 For more details see [here](http://console.systems/2014/09/how-to-pair-low-energy-le-bluetooth.html) and [here](https://unix.stackexchange.com/questions/255509/bluetooth-pairing-on-dual-boot-of-windows-linux-mint-ubuntu-stop-having-to-p)
